@@ -1,0 +1,240 @@
+{
+  "id": 2,
+  "name": "Rust Yards",
+  "intro": "Armored front-liners shrug off rifle rounds, and gates start asking for something back.",
+  "levels": [
+    {
+      "id": "2-1",
+      "name": "Plate Wall",
+      "length": 2900,
+      "scroll": 70,
+      "start": 14,
+      "stars": [25, 45],
+      "hint": "Armor eats weak hits. The Piercer ignores it. There is one in the ice.",
+      "gates": [
+        {"y": 300, "x": -85, "m": "+8"},
+        {"y": 300, "x": 85, "m": "x2"},
+        {"y": 1850, "x": -85, "m": "+10"},
+        {"y": 1850, "x": 85, "m": "+6", "shoot": 2, "max": 18}
+      ],
+      "prizes": [
+        {"y": 650, "x": 0, "hp": 110, "r": "weapon:piercer"}
+      ],
+      "waves": [
+        {"y": 500, "t": "zombie", "n": 14, "w": 200, "d": 50},
+        {"y": 1000, "t": "armored", "n": 7, "f": "line", "w": 240},
+        {"y": 1060, "t": "zombie", "n": 30, "w": 240, "d": 90},
+        {"y": 1500, "t": "armored", "n": 9, "f": "line", "w": 280},
+        {"y": 1560, "t": "zombie", "n": 40, "w": 280, "d": 100},
+        {"y": 2250, "t": "armored", "n": 10, "f": "line", "w": 310},
+        {"y": 2320, "t": "zombie", "n": 55, "w": 300, "d": 150}
+      ]
+    },
+    {
+      "id": "2-2",
+      "name": "Fine Print",
+      "length": 3000,
+      "scroll": 70,
+      "start": 14,
+      "stars": [25, 45],
+      "hint": "Some gates cost something. Fast, weak shots barely dent armor.",
+      "gates": [
+        {"y": 250, "x": -85, "m": "+10"},
+        {"y": 250, "x": 85, "m": "x2"},
+        {"y": 600, "x": -85, "m": "fire+100%, dmg-50%"},
+        {"y": 600, "x": 85, "m": "dmg+60%, fire-30%"},
+        {"y": 1250, "x": -85, "m": "+12, fire-25%"},
+        {"y": 1250, "x": 85, "m": "x2, dmg-30%"},
+        {"y": 2200, "x": -85, "m": "pierce+1, fire-30%"},
+        {"y": 2200, "x": 85, "m": "+10"}
+      ],
+      "waves": [
+        {"y": 900, "t": "armored", "n": 6, "f": "line", "w": 260},
+        {"y": 960, "t": "zombie", "n": 20, "w": 240, "d": 80},
+        {"y": 1550, "t": "zombie", "n": 60, "w": 300, "d": 140},
+        {"y": 1950, "t": "armored", "n": 10, "f": "line", "w": 300},
+        {"y": 2010, "t": "zombie", "n": 30, "w": 260, "d": 90},
+        {"y": 2550, "t": "armored", "n": 14, "f": "line", "w": 320},
+        {"y": 2620, "t": "zombie", "n": 60, "w": 300, "d": 140}
+      ]
+    },
+    {
+      "id": "2-3",
+      "name": "Crossfire",
+      "length": 3200,
+      "scroll": 72,
+      "start": 15,
+      "stars": [30, 55],
+      "gates": [
+        {"y": 300, "x": -85, "m": "x2"},
+        {"y": 300, "x": 85, "m": "+12"},
+        {"y": 1150, "x": -85, "m": "dmg+50%, fire-20%"},
+        {"y": 1150, "x": 85, "m": "fire+60%, dmg-40%"},
+        {"y": 1750, "x": -85, "m": "+15"},
+        {"y": 1750, "x": 85, "m": "x2"},
+        {"y": 2250, "x": -85, "m": "+15", "shoot": 3, "max": 30},
+        {"y": 2250, "x": 85, "m": "-8", "shoot": 2, "max": 10}
+      ],
+      "waves": [
+        {"y": 700, "t": "armored", "n": 6, "f": "line", "x": -60, "w": 200},
+        {"y": 760, "t": "zombie", "n": 20, "x": -60, "w": 200, "d": 60},
+        {"y": 850, "t": "runner", "n": 12, "f": "column", "x": 113, "d": 250},
+        {"y": 1450, "t": "armored", "n": 8, "f": "line", "w": 260},
+        {"y": 1510, "t": "zombie", "n": 30, "w": 260, "d": 100},
+        {"y": 1600, "t": "runner", "n": 12, "f": "column", "x": -113, "d": 250},
+        {"y": 2000, "t": "zombie", "n": 50, "w": 300, "d": 150},
+        {"y": 2550, "t": "armored", "n": 12, "f": "line", "w": 320},
+        {"y": 2600, "t": "runner", "n": 14, "f": "column", "x": 0, "d": 220},
+        {"y": 2850, "t": "zombie", "n": 80, "w": 320, "d": 160}
+      ]
+    },
+    {
+      "id": "2-4",
+      "name": "Behind the Line",
+      "length": 3300,
+      "scroll": 72,
+      "start": 16,
+      "stars": [30, 55],
+      "hint": "Armor in front of a gate soaks up the bullets meant for it.",
+      "gates": [
+        {"y": 300, "x": -85, "m": "+10"},
+        {"y": 300, "x": 85, "m": "x2"},
+        {"y": 850, "x": -85, "m": "-10", "shoot": 2, "max": 24},
+        {"y": 850, "x": 85, "m": "-5", "shoot": 3, "max": 16},
+        {"y": 1550, "x": -85, "m": "x2"},
+        {"y": 1550, "x": 85, "m": "fire+40%, dmg-20%"}
+      ],
+      "prizes": [
+        {"y": 2150, "x": -100, "hp": 320, "r": "mech"}
+      ],
+      "waves": [
+        {"y": 700, "t": "armored", "n": 10, "f": "line", "w": 300},
+        {"y": 1250, "t": "zombie", "n": 40, "w": 280, "d": 120},
+        {"y": 1750, "t": "armored", "n": 10, "f": "line", "w": 300},
+        {"y": 1810, "t": "zombie", "n": 34, "w": 280, "d": 110},
+        {"y": 2050, "t": "zombie", "n": 26, "x": 60, "w": 140, "d": 80},
+        {"y": 2550, "t": "armored", "n": 14, "f": "line", "w": 320},
+        {"y": 2620, "t": "zombie", "n": 90, "w": 320, "d": 170}
+      ]
+    },
+    {
+      "id": "2-5",
+      "name": "Scrap Mech",
+      "length": 3400,
+      "scroll": 72,
+      "start": 16,
+      "stars": [30, 55],
+      "hint": "The mech is guarded. Piercing shots go through the guards and into the ice.",
+      "gates": [
+        {"y": 300, "x": -85, "m": "x2"},
+        {"y": 300, "x": 85, "m": "+12"},
+        {"y": 1750, "x": -85, "m": "+15"},
+        {"y": 1750, "x": 85, "m": "dmg+50%, -5"}
+      ],
+      "prizes": [
+        {"y": 1350, "x": 0, "hp": 340, "r": "mech"}
+      ],
+      "waves": [
+        {"y": 900, "t": "armored", "n": 8, "f": "line", "x": 0, "w": 150},
+        {"y": 950, "t": "armored", "n": 6, "f": "line", "x": 0, "w": 120},
+        {"y": 1100, "t": "zombie", "n": 26, "x": -115, "w": 90, "d": 120},
+        {"y": 1100, "t": "zombie", "n": 26, "x": 115, "w": 90, "d": 120},
+        {"y": 2050, "t": "zombie", "n": 80, "w": 300, "d": 160},
+        {"y": 2450, "t": "armored", "n": 12, "f": "line", "w": 320},
+        {"y": 2850, "t": "zombie", "n": 80, "w": 320, "d": 200}
+      ]
+    },
+    {
+      "id": "2-6",
+      "name": "Compactor",
+      "length": 3400,
+      "scroll": 72,
+      "start": 16,
+      "stars": [30, 55],
+      "walls": [
+        {"y": 1000, "h": 520, "x0": -170, "x1": -45},
+        {"y": 1000, "h": 520, "x0": 45, "x1": 170}
+      ],
+      "gates": [
+        {"y": 400, "x": -85, "m": "pierce+1, fire-20%"},
+        {"y": 400, "x": 85, "m": "+12"},
+        {"y": 700, "x": -85, "m": "x2"},
+        {"y": 700, "x": 85, "m": "dmg+40%"},
+        {"y": 1850, "x": -85, "m": "+15", "shoot": 3, "max": 30},
+        {"y": 1850, "x": 85, "m": "-10", "shoot": 2, "max": 10}
+      ],
+      "waves": [
+        {"y": 1100, "t": "armored", "n": 12, "f": "column", "x": 0, "d": 320},
+        {"y": 1350, "t": "zombie", "n": 14, "x": 0, "w": 60, "d": 80},
+        {"y": 2150, "t": "zombie", "n": 70, "w": 300, "d": 150},
+        {"y": 2550, "t": "armored", "n": 14, "f": "line", "w": 320},
+        {"y": 2610, "t": "zombie", "n": 40, "w": 300, "d": 100},
+        {"y": 2950, "t": "runner", "n": 12, "f": "column", "x": -113, "d": 200},
+        {"y": 2950, "t": "runner", "n": 12, "f": "column", "x": 113, "d": 200}
+      ]
+    },
+    {
+      "id": "2-7",
+      "name": "Long Haul",
+      "length": 4200,
+      "scroll": 74,
+      "start": 16,
+      "stars": [35, 65],
+      "walls": [
+        {"y": 2300, "h": 700, "x0": -20, "x1": 20}
+      ],
+      "gates": [
+        {"y": 300, "x": -85, "m": "x2"},
+        {"y": 300, "x": 85, "m": "+10"},
+        {"y": 1000, "x": -85, "m": "fire+50%, dmg-30%"},
+        {"y": 1000, "x": 85, "m": "dmg+50%, fire-30%"},
+        {"y": 1700, "x": -85, "m": "+12", "shoot": 3, "max": 30},
+        {"y": 1700, "x": 85, "m": "x2, fire-20%"},
+        {"y": 2500, "x": -95, "m": "+15", "w": 130},
+        {"y": 2500, "x": 95, "m": "pierce+1", "w": 130},
+        {"y": 3400, "x": -85, "m": "+10"},
+        {"y": 3400, "x": 85, "m": "-12", "shoot": 2, "max": 14}
+      ],
+      "prizes": [
+        {"y": 2800, "x": 95, "hp": 360, "r": "mech"}
+      ],
+      "waves": [
+        {"y": 700, "t": "zombie", "n": 40, "w": 300, "d": 110},
+        {"y": 1200, "t": "armored", "n": 10, "f": "line", "w": 300},
+        {"y": 1260, "t": "runner", "n": 12, "f": "column", "x": 0, "d": 200},
+        {"y": 1500, "t": "zombie", "n": 60, "w": 300, "d": 140},
+        {"y": 2000, "t": "armored", "n": 12, "f": "line", "w": 320},
+        {"y": 2060, "t": "zombie", "n": 40, "w": 300, "d": 100},
+        {"y": 2600, "t": "zombie", "n": 40, "x": -95, "w": 120, "d": 160},
+        {"y": 2650, "t": "armored", "n": 8, "f": "column", "x": 95, "d": 250},
+        {"y": 3200, "t": "zombie", "n": 80, "w": 320, "d": 200},
+        {"y": 3700, "t": "armored", "n": 14, "f": "line", "w": 320},
+        {"y": 3760, "t": "zombie", "n": 80, "w": 320, "d": 180}
+      ]
+    },
+    {
+      "id": "2-8",
+      "name": "Iron Hulk",
+      "length": 1500,
+      "scroll": 72,
+      "start": 16,
+      "stars": [15, 30],
+      "hint": "Its plating is tough. When the vent glows, everything hits harder. Slams hit two lanes. Find the third.",
+      "gates": [
+        {"y": 300, "x": -85, "m": "x2"},
+        {"y": 300, "x": 85, "m": "+12"},
+        {"y": 900, "x": -85, "m": "fire+50%, dmg-25%"},
+        {"y": 900, "x": 85, "m": "pierce+1, fire-20%"}
+      ],
+      "prizes": [
+        {"y": 1250, "x": 0, "hp": 300, "r": "mech"}
+      ],
+      "waves": [
+        {"y": 600, "t": "armored", "n": 8, "f": "line", "w": 260},
+        {"y": 660, "t": "zombie", "n": 24, "w": 240, "d": 60},
+        {"y": 1100, "t": "zombie", "n": 30, "w": 280, "d": 80}
+      ],
+      "boss": {"kind": "ironHulk", "hp": 1000}
+    }
+  ]
+}

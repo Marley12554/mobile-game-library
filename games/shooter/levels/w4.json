@@ -1,0 +1,237 @@
+{
+  "id": 4,
+  "name": "Old Fortress",
+  "intro": "Shields stop straight shots, and the gates here change their minds on a timer.",
+  "levels": [
+    {
+      "id": "4-1",
+      "name": "Scattershot",
+      "length": 2900,
+      "scroll": 74,
+      "start": 18,
+      "stars": [30, 55],
+      "hint": "The Spread covers a wide arc up close. Runner swarms hate it. There is one in the ice.",
+      "gates": [
+        {"y": 300, "x": -85, "m": "+12"},
+        {"y": 300, "x": 85, "m": "x2"},
+        {"y": 1800, "x": -85, "m": "+15"},
+        {"y": 1800, "x": 85, "m": "fire+40%, dmg-20%"}
+      ],
+      "prizes": [
+        {"y": 650, "x": 0, "hp": 150, "r": "weapon:spread"}
+      ],
+      "waves": [
+        {"y": 500, "t": "zombie", "n": 24, "w": 220, "d": 60},
+        {"y": 1000, "t": "runner", "n": 9, "f": "column", "x": -113, "d": 220},
+        {"y": 1100, "t": "runner", "n": 9, "f": "column", "x": 0, "d": 220},
+        {"y": 1200, "t": "runner", "n": 9, "f": "column", "x": 113, "d": 220},
+        {"y": 1550, "t": "runner", "n": 18, "f": "scatter", "w": 320, "d": 300},
+        {"y": 2100, "t": "zombie", "n": 80, "w": 320, "d": 170},
+        {"y": 2500, "t": "runner", "n": 24, "f": "scatter", "w": 320, "d": 320}
+      ]
+    },
+    {
+      "id": "4-2",
+      "name": "Shield Wall",
+      "length": 3100,
+      "scroll": 74,
+      "start": 18,
+      "stars": [30, 55],
+      "hint": "Shields stop straight shots. Angled pellets and explosions go around them.",
+      "gates": [
+        {"y": 300, "x": -85, "m": "x2"},
+        {"y": 300, "x": 85, "m": "+12"},
+        {"y": 1300, "x": -85, "m": "+15"},
+        {"y": 1300, "x": 85, "m": "dmg+40%, fire-20%"},
+        {"y": 2300, "x": -85, "m": "+12", "shoot": 3, "max": 30},
+        {"y": 2300, "x": 85, "m": "x2, fire-25%"}
+      ],
+      "waves": [
+        {"y": 700, "t": "shielded", "n": 8, "f": "line", "w": 260},
+        {"y": 760, "t": "zombie", "n": 30, "w": 240, "d": 80},
+        {"y": 1600, "t": "shielded", "n": 12, "f": "line", "w": 300},
+        {"y": 1660, "t": "zombie", "n": 50, "w": 300, "d": 120},
+        {"y": 2600, "t": "shielded", "n": 16, "f": "line", "w": 320},
+        {"y": 2660, "t": "zombie", "n": 80, "w": 320, "d": 150}
+      ]
+    },
+    {
+      "id": "4-3",
+      "name": "Now or Never",
+      "length": 3200,
+      "scroll": 74,
+      "start": 18,
+      "stars": [30, 55],
+      "hint": "Flip gates change on a timer. The bar shows how long until they flip.",
+      "gates": [
+        {"y": 350, "x": -85, "m": "x2", "alt": "-10", "period": 3.0},
+        {"y": 350, "x": 85, "m": "+8"},
+        {"y": 1100, "x": 0, "m": "+25", "w": 140, "alt": "/2", "period": 2.6},
+        {"y": 1900, "x": -85, "m": "+15", "alt": "-15", "period": 2.4},
+        {"y": 1900, "x": 85, "m": "x2", "alt": "/2", "period": 3.2},
+        {"y": 2600, "x": -85, "m": "+12"},
+        {"y": 2600, "x": 85, "m": "fire+60%", "alt": "fire-40%", "period": 2.8}
+      ],
+      "waves": [
+        {"y": 700, "t": "zombie", "n": 36, "w": 280, "d": 110},
+        {"y": 1400, "t": "shielded", "n": 8, "f": "line", "w": 280},
+        {"y": 1460, "t": "zombie", "n": 30, "w": 280, "d": 100},
+        {"y": 2200, "t": "runner", "n": 20, "f": "scatter", "w": 320, "d": 260},
+        {"y": 2850, "t": "zombie", "n": 90, "w": 320, "d": 180}
+      ]
+    },
+    {
+      "id": "4-4",
+      "name": "Phalanx",
+      "length": 3400,
+      "scroll": 74,
+      "start": 20,
+      "stars": [35, 60],
+      "gates": [
+        {"y": 300, "x": -85, "m": "x2"},
+        {"y": 300, "x": 85, "m": "pierce+1"},
+        {"y": 1100, "x": -85, "m": "dmg+50%, fire-25%", "alt": "fire+50%, dmg-25%", "period": 3.0},
+        {"y": 1100, "x": 85, "m": "+15"},
+        {"y": 2000, "x": -85, "m": "+15", "shoot": 3, "max": 30},
+        {"y": 2000, "x": 85, "m": "x2", "alt": "-12", "period": 2.8},
+        {"y": 2800, "x": -85, "m": "+12"},
+        {"y": 2800, "x": 85, "m": "dmg+40%"}
+      ],
+      "waves": [
+        {"y": 700, "t": "armored", "n": 8, "f": "line", "w": 280},
+        {"y": 750, "t": "shielded", "n": 8, "f": "line", "w": 280},
+        {"y": 820, "t": "zombie", "n": 30, "w": 260, "d": 80},
+        {"y": 1500, "t": "zombie", "n": 80, "w": 320, "d": 160},
+        {"y": 2300, "t": "shielded", "n": 12, "f": "line", "w": 320},
+        {"y": 2350, "t": "armored", "n": 12, "f": "line", "w": 320},
+        {"y": 2420, "t": "zombie", "n": 50, "w": 300, "d": 120},
+        {"y": 3050, "t": "shielded", "n": 14, "f": "line", "w": 320},
+        {"y": 3110, "t": "zombie", "n": 90, "w": 320, "d": 160}
+      ]
+    },
+    {
+      "id": "4-5",
+      "name": "Gatehouse",
+      "length": 3500,
+      "scroll": 74,
+      "start": 20,
+      "stars": [35, 60],
+      "hint": "The mech is behind a shield line. Breaking it means firing at an angle or blowing it up.",
+      "gates": [
+        {"y": 300, "x": -85, "m": "+15"},
+        {"y": 300, "x": 85, "m": "x2", "alt": "/2", "period": 2.8},
+        {"y": 2000, "x": -85, "m": "+15", "alt": "-10", "period": 2.5},
+        {"y": 2000, "x": 85, "m": "+10"},
+        {"y": 2700, "x": 0, "m": "x2", "w": 120, "alt": "-20", "period": 2.8}
+      ],
+      "prizes": [
+        {"y": 1500, "x": 0, "hp": 460, "r": "mech"}
+      ],
+      "waves": [
+        {"y": 800, "t": "zombie", "n": 50, "w": 280, "d": 110},
+        {"y": 1150, "t": "shielded", "n": 10, "f": "line", "x": 0, "w": 160},
+        {"y": 1200, "t": "shielded", "n": 8, "f": "line", "x": 0, "w": 140},
+        {"y": 1300, "t": "zombie", "n": 30, "x": -115, "w": 80, "d": 100},
+        {"y": 1300, "t": "zombie", "n": 30, "x": 115, "w": 80, "d": 100},
+        {"y": 2300, "t": "runner", "n": 30, "f": "scatter", "w": 320, "d": 250},
+        {"y": 2950, "t": "zombie", "n": 140, "w": 320, "d": 200}
+      ]
+    },
+    {
+      "id": "4-6",
+      "name": "Murder Holes",
+      "length": 3600,
+      "scroll": 74,
+      "start": 20,
+      "stars": [35, 60],
+      "walls": [
+        {"y": 900, "h": 380, "x0": -170, "x1": -60},
+        {"y": 900, "h": 380, "x0": 60, "x1": 170},
+        {"y": 2000, "h": 380, "x0": -170, "x1": -100},
+        {"y": 2000, "h": 380, "x0": -20, "x1": 20},
+        {"y": 2000, "h": 380, "x0": 100, "x1": 170}
+      ],
+      "gates": [
+        {"y": 500, "x": -85, "m": "x2"},
+        {"y": 500, "x": 85, "m": "+15"},
+        {"y": 1500, "x": -85, "m": "+12", "alt": "-12", "period": 2.5},
+        {"y": 1500, "x": 85, "m": "dmg+40%"},
+        {"y": 2700, "x": -85, "m": "+15", "shoot": 3, "max": 30},
+        {"y": 2700, "x": 85, "m": "x2, fire-25%"}
+      ],
+      "waves": [
+        {"y": 1000, "t": "shielded", "n": 8, "f": "column", "x": 0, "d": 250},
+        {"y": 1050, "t": "zombie", "n": 26, "x": 0, "w": 100, "d": 200},
+        {"y": 1700, "t": "zombie", "n": 70, "w": 300, "d": 150},
+        {"y": 2100, "t": "shielded", "n": 6, "f": "column", "x": -60, "d": 200},
+        {"y": 2100, "t": "shielded", "n": 6, "f": "column", "x": 60, "d": 200},
+        {"y": 2150, "t": "zombie", "n": 20, "x": -60, "w": 60, "d": 150},
+        {"y": 2150, "t": "zombie", "n": 20, "x": 60, "w": 60, "d": 150},
+        {"y": 3000, "t": "shielded", "n": 16, "f": "line", "w": 320},
+        {"y": 3060, "t": "zombie", "n": 120, "w": 320, "d": 190}
+      ]
+    },
+    {
+      "id": "4-7",
+      "name": "The Long Wall",
+      "length": 4400,
+      "scroll": 76,
+      "start": 20,
+      "stars": [40, 70],
+      "walls": [
+        {"y": 2600, "h": 800, "x0": -20, "x1": 20}
+      ],
+      "gates": [
+        {"y": 300, "x": -85, "m": "x2"},
+        {"y": 300, "x": 85, "m": "+15"},
+        {"y": 1000, "x": 0, "m": "+25", "w": 110, "move": [110, 2.6]},
+        {"y": 1800, "x": -85, "m": "fire+50%, dmg-25%", "alt": "dmg+50%, fire-25%", "period": 3.2},
+        {"y": 1800, "x": 85, "m": "x2", "alt": "-15", "period": 2.8},
+        {"y": 2800, "x": -95, "m": "weapon:spread", "w": 130},
+        {"y": 2800, "x": 95, "m": "weapon:piercer", "w": 130},
+        {"y": 3700, "x": -85, "m": "+15"},
+        {"y": 3700, "x": 85, "m": "+10", "shoot": 3, "max": 30}
+      ],
+      "prizes": [
+        {"y": 3150, "x": 95, "hp": 420, "r": "mech"}
+      ],
+      "waves": [
+        {"y": 650, "t": "zombie", "n": 84, "w": 300, "d": 130},
+        {"y": 1300, "t": "shielded", "n": 14, "f": "line", "w": 320},
+        {"y": 1360, "t": "runner", "n": 20, "f": "scatter", "w": 320, "d": 200},
+        {"y": 2100, "t": "zombie", "n": 140, "w": 320, "d": 180},
+        {"y": 2400, "t": "armored", "n": 14, "f": "line", "w": 320},
+        {"y": 2900, "t": "runner", "n": 30, "f": "scatter", "x": -95, "w": 130, "d": 300},
+        {"y": 2950, "t": "armored", "n": 12, "f": "column", "x": 95, "d": 300},
+        {"y": 3000, "t": "shielded", "n": 7, "f": "column", "x": 95, "d": 200},
+        {"y": 3500, "t": "zombie", "n": 196, "w": 320, "d": 200},
+        {"y": 4000, "t": "shielded", "n": 22, "f": "line", "w": 320},
+        {"y": 4060, "t": "zombie", "n": 112, "w": 320, "d": 150}
+      ]
+    },
+    {
+      "id": "4-8",
+      "name": "The Warden",
+      "length": 1500,
+      "scroll": 74,
+      "start": 20,
+      "stars": [15, 30],
+      "hint": "Its shield is up until it throws spears. Spears fly down two lanes. Right after a volley, the shield is down.",
+      "gates": [
+        {"y": 300, "x": -85, "m": "x2"},
+        {"y": 300, "x": 85, "m": "+15"},
+        {"y": 900, "x": -85, "m": "+15", "alt": "-10", "period": 2.8},
+        {"y": 900, "x": 85, "m": "dmg+40%"}
+      ],
+      "prizes": [
+        {"y": 1250, "x": 0, "hp": 340, "r": "mech"}
+      ],
+      "waves": [
+        {"y": 600, "t": "shielded", "n": 8, "f": "line", "w": 260},
+        {"y": 660, "t": "zombie", "n": 30, "w": 260, "d": 80},
+        {"y": 1100, "t": "zombie", "n": 40, "w": 280, "d": 100}
+      ],
+      "boss": {"kind": "warden", "hp": 1500}
+    }
+  ]
+}

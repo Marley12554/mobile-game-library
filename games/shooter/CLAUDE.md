@@ -72,6 +72,34 @@ The bright, punchy mobile-ad look, on purpose. The sim project in this repo goes
 - **Engine ownership:** the ball-sim project owns the engine. Don't edit the copy here. If an engine change is needed, describe it to the user so it can be made in ball-sim and copied over. Game-specific needs (bullets, steering, rendering, input) are game code.
 - Push work when a step is done.
 
+### Decisions made so far
+
+- Permanent stat layer (confirmed by the user): **earned upgrades**. Stars from levels buy small upgrades with low caps (Recruits, Caliber, Trigger, Ice Pick, Quick Hands), free refunds. Everything else resets each level. Unlocks (weapons, squads, abilities) come from clearing specific levels and are options, not power.
+- Display name: Zombie Gates.
+- Stars per level: clear; break every prize (or finish with `stars[0]` survivors if the level has no prize); finish with `stars[1]` survivors.
+- Splitters burst into 2 from bullets and 4 from explosions. That is the explicit rule that punishes explosives against packs.
+- Shields block straight shots only. Angled pellets (Spread) and explosions go around them.
+- Flip gates use periods of 2.4 s or more with a visible countdown. Forward speed is fixed, so a flip gate is a read-the-timer lane choice, not a timing test.
+- Bosses hold 320 units ahead so short-range weapons (Spread, Frost) can reach them.
+
+### Status
+
+Steps 1 to 7 are built: 5 worlds x 8 levels (40, the bottom of the 40-60 target), 5 bosses, 5 weapons, 4 squad types, 4 abilities, upgrades, saves, menus, sound and juice. Not yet done: a real human playtest pass, a modifier/challenge mode, worlds 6+.
+
+### Code map
+
+- `src/game/` simulation only, no DOM. `sim.ts` (squad, horde, bullets, gates, prizes, abilities), `bosses.ts`, data tables (`weapons.ts`, `enemies.ts`, `loadout.ts`), `gates.ts` (effect strings), `levels.ts` (loads `levels/*.json`), `bot.ts` (heuristic player for tuning).
+- `src/render/` canvas drawing: `renderer.ts`, `sprites.ts` (pre-drawn blob figures), `particles.ts`.
+- `src/ui/` DOM screens (`screens.ts`), play loop (`play.ts`), input, synth audio, styles.
+- `src/meta/` saves and progression. Kept apart from gameplay so a collection shell can take it over.
+- `levels/w1.json`..`w5.json` hand-made level data. One gate/wave per line. Field reference is in `src/game/types.ts`.
+
+### Tuning
+
+- `npx vite-node -c vitest.config.ts scripts/tune.ts [levelPrefix] [seeds]` plays levels headlessly with the bot for each weapon unlocked by then, plus an idle run. The bot is a yardstick, not a player: it can't plan routes or learn boss patterns. If it wins with lots of survivors, the level is slack. If it never wins with any weapon, look at the level.
+- `?watch=<level id>` in the browser lets the bot play a level visibly. Nothing is saved.
+- Calibration that matters: a squad kills roughly `soldiers` zombies per second within its columns, and zombies cross rifle range in about 4 s. A horde only threatens when it is packed denser than the squad can chew, so late waves are sized at 2 to 3 times the squad you would have by then.
+
 ### Engine review (step 1, done)
 
 - Reusable as-is: body-body crowd physics (horde and squad bunching), layer/mask teams, `frozen` for parking off-screen units, standalone `SpatialHash`, `Rng`, `dmath`, `Runner`, `Registry`/`Dispatcher` for gate and prize effects.

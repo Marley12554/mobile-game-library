@@ -1,0 +1,255 @@
+{
+  "id": 5,
+  "name": "Dead City",
+  "intro": "Everything you have learned, all at once. And something here wants your gates.",
+  "levels": [
+    {
+      "id": "5-1",
+      "name": "Cold Snap",
+      "length": 3000,
+      "scroll": 76,
+      "start": 20,
+      "stars": [30, 55],
+      "hint": "The Frost Beam is short and weak, but everything it touches slows down. There is one in the ice.",
+      "gates": [
+        {"y": 300, "x": -85, "m": "+12"},
+        {"y": 300, "x": 85, "m": "x2"},
+        {"y": 1900, "x": -85, "m": "+15"},
+        {"y": 1900, "x": 85, "m": "fire+40%, dmg-20%"}
+      ],
+      "prizes": [
+        {"y": 650, "x": 0, "hp": 160, "r": "weapon:frost"}
+      ],
+      "waves": [
+        {"y": 500, "t": "zombie", "n": 26, "w": 220, "d": 60},
+        {"y": 1000, "t": "runner", "n": 12, "f": "column", "x": -113, "d": 200},
+        {"y": 1050, "t": "runner", "n": 12, "f": "column", "x": 113, "d": 200},
+        {"y": 1400, "t": "runner", "n": 14, "f": "scatter", "w": 320, "d": 300},
+        {"y": 1600, "t": "brute", "n": 1, "f": "line", "w": 160},
+        {"y": 2200, "t": "zombie", "n": 90, "w": 320, "d": 170},
+        {"y": 2500, "t": "runner", "n": 18, "f": "scatter", "w": 320, "d": 320},
+        {"y": 2700, "t": "brute", "n": 2, "f": "line", "w": 220}
+      ]
+    },
+    {
+      "id": "5-2",
+      "name": "Pickpockets",
+      "length": 3200,
+      "scroll": 76,
+      "start": 20,
+      "stars": [30, 55],
+      "hint": "Gate thieves run for your best gates and turn them bad. Get them before they get there.",
+      "gates": [
+        {"y": 500, "x": -85, "m": "x2"},
+        {"y": 500, "x": 85, "m": "+15"},
+        {"y": 1300, "x": -85, "m": "+20"},
+        {"y": 1300, "x": 85, "m": "+12", "shoot": 3, "max": 24},
+        {"y": 2200, "x": -113, "m": "+15", "w": 100},
+        {"y": 2200, "x": 0, "m": "+25", "w": 100},
+        {"y": 2200, "x": 113, "m": "+10", "w": 100},
+        {"y": 2900, "x": -85, "m": "+12"},
+        {"y": 2900, "x": 85, "m": "dmg+50%"}
+      ],
+      "waves": [
+        {"y": 750, "t": "thief", "n": 3, "f": "line", "x": -60, "w": 140},
+        {"y": 900, "t": "zombie", "n": 40, "w": 260, "d": 90},
+        {"y": 1550, "t": "thief", "n": 6, "f": "scatter", "w": 280, "d": 80},
+        {"y": 1700, "t": "zombie", "n": 70, "w": 300, "d": 140},
+        {"y": 2350, "t": "thief", "n": 10, "f": "scatter", "w": 300, "d": 100},
+        {"y": 2450, "t": "runner", "n": 16, "f": "column", "x": 0, "d": 200},
+        {"y": 2950, "t": "thief", "n": 8, "f": "scatter", "w": 280, "d": 80},
+        {"y": 3050, "t": "zombie", "n": 130, "w": 320, "d": 190}
+      ]
+    },
+    {
+      "id": "5-3",
+      "name": "Armory",
+      "length": 3300,
+      "scroll": 76,
+      "start": 20,
+      "stars": [35, 60],
+      "hint": "Weapon gates swap your gun for the rest of the level. Look at what is coming before you pick.",
+      "gates": [
+        {"y": 300, "x": -85, "m": "+12"},
+        {"y": 300, "x": 85, "m": "x2"},
+        {"y": 900, "x": -85, "m": "weapon:launcher"},
+        {"y": 900, "x": 85, "m": "weapon:piercer"},
+        {"y": 1900, "x": -85, "m": "weapon:spread"},
+        {"y": 1900, "x": 85, "m": "weapon:rifle"},
+        {"y": 2700, "x": -85, "m": "+15"},
+        {"y": 2700, "x": 85, "m": "x2", "alt": "-15", "period": 2.8}
+      ],
+      "waves": [
+        {"y": 1100, "t": "zombie", "n": 80, "x": 0, "w": 200, "d": 160},
+        {"y": 1500, "t": "armored", "n": 12, "f": "line", "w": 320},
+        {"y": 2100, "t": "shielded", "n": 12, "f": "line", "w": 320},
+        {"y": 2160, "t": "runner", "n": 20, "f": "scatter", "w": 320, "d": 240},
+        {"y": 2950, "t": "splitter", "n": 18, "w": 300, "d": 120},
+        {"y": 3050, "t": "zombie", "n": 80, "w": 320, "d": 150}
+      ]
+    },
+    {
+      "id": "5-4",
+      "name": "Rush Hour, Again",
+      "length": 3500,
+      "scroll": 78,
+      "start": 20,
+      "stars": [35, 60],
+      "gates": [
+        {"y": 300, "x": -85, "m": "x2"},
+        {"y": 300, "x": 85, "m": "+15"},
+        {"y": 1000, "x": 0, "m": "+25", "w": 110, "move": [110, 2.4]},
+        {"y": 1700, "x": -85, "m": "fire+60%, dmg-30%"},
+        {"y": 1700, "x": 85, "m": "pierce+1"},
+        {"y": 2500, "x": -85, "m": "+15", "shoot": 3, "max": 30},
+        {"y": 2500, "x": 85, "m": "x2", "alt": "/2", "period": 3}
+      ],
+      "waves": [
+        {"y": 650, "t": "zombie", "n": 60, "w": 300, "d": 130},
+        {"y": 1200, "t": "runner", "n": 30, "f": "scatter", "w": 320, "d": 300},
+        {"y": 1250, "t": "thief", "n": 4, "f": "line", "w": 200},
+        {"y": 1900, "t": "armored", "n": 12, "f": "line", "w": 320},
+        {"y": 1950, "t": "shielded", "n": 10, "f": "line", "w": 320},
+        {"y": 2010, "t": "zombie", "n": 60, "w": 300, "d": 120},
+        {"y": 2800, "t": "splitter", "n": 18, "w": 300, "d": 120},
+        {"y": 2900, "t": "zombie", "n": 130, "w": 320, "d": 200},
+        {"y": 3200, "t": "brute", "n": 3, "f": "line", "w": 220}
+      ]
+    },
+    {
+      "id": "5-5",
+      "name": "The Vault",
+      "length": 3600,
+      "scroll": 78,
+      "start": 20,
+      "stars": [35, 60],
+      "hint": "The vault mech is guarded, and thieves are working the gates around it.",
+      "gates": [
+        {"y": 300, "x": -85, "m": "+15"},
+        {"y": 300, "x": 85, "m": "x2"},
+        {"y": 1100, "x": -85, "m": "+20"},
+        {"y": 1100, "x": 85, "m": "+12", "shoot": 2, "max": 30},
+        {"y": 2300, "x": -85, "m": "x2"},
+        {"y": 2300, "x": 85, "m": "+20"},
+        {"y": 3000, "x": -85, "m": "+15"},
+        {"y": 3000, "x": 85, "m": "dmg+40%"}
+      ],
+      "prizes": [
+        {"y": 1700, "x": 0, "hp": 520, "r": "mech"}
+      ],
+      "waves": [
+        {"y": 700, "t": "thief", "n": 4, "f": "line", "w": 200},
+        {"y": 800, "t": "zombie", "n": 40, "w": 260, "d": 100},
+        {"y": 1350, "t": "armored", "n": 8, "f": "line", "x": 0, "w": 150},
+        {"y": 1400, "t": "shielded", "n": 6, "f": "line", "x": 0, "w": 130},
+        {"y": 1500, "t": "zombie", "n": 26, "x": -115, "w": 80, "d": 100},
+        {"y": 1500, "t": "zombie", "n": 26, "x": 115, "w": 80, "d": 100},
+        {"y": 2000, "t": "thief", "n": 6, "f": "line", "w": 280},
+        {"y": 2600, "t": "zombie", "n": 120, "w": 320, "d": 190},
+        {"y": 3200, "t": "thief", "n": 5, "f": "line", "w": 240},
+        {"y": 3250, "t": "splitter", "n": 20, "w": 300, "d": 120}
+      ]
+    },
+    {
+      "id": "5-6",
+      "name": "Crossroads",
+      "length": 3800,
+      "scroll": 78,
+      "start": 22,
+      "stars": [40, 65],
+      "hint": "Each road hands you a different gun. Each road has a different problem.",
+      "walls": [
+        {"y": 800, "h": 1500, "x0": -18, "x1": 18}
+      ],
+      "gates": [
+        {"y": 400, "x": -85, "m": "+15"},
+        {"y": 400, "x": 85, "m": "x2"},
+        {"y": 950, "x": -95, "m": "weapon:launcher", "w": 130},
+        {"y": 950, "x": 95, "m": "weapon:spread", "w": 130},
+        {"y": 1700, "x": -95, "m": "+20", "w": 120},
+        {"y": 1700, "x": 95, "m": "x2", "w": 120, "alt": "/2", "period": 2.6},
+        {"y": 2700, "x": -85, "m": "+15", "shoot": 3, "max": 30},
+        {"y": 2700, "x": 85, "m": "weapon:piercer"}
+      ],
+      "waves": [
+        {"y": 1150, "t": "zombie", "n": 70, "x": -95, "w": 120, "d": 200},
+        {"y": 1500, "t": "zombie", "n": 40, "x": -95, "w": 120, "d": 120},
+        {"y": 1150, "t": "shielded", "n": 10, "f": "column", "x": 95, "d": 300},
+        {"y": 1300, "t": "runner", "n": 20, "f": "scatter", "x": 95, "w": 120, "d": 300},
+        {"y": 2500, "t": "thief", "n": 5, "f": "line", "w": 240},
+        {"y": 3000, "t": "armored", "n": 14, "f": "line", "w": 320},
+        {"y": 3060, "t": "zombie", "n": 110, "w": 320, "d": 180},
+        {"y": 3400, "t": "splitter", "n": 20, "w": 300, "d": 120}
+      ]
+    },
+    {
+      "id": "5-7",
+      "name": "Last Mile",
+      "length": 4600,
+      "scroll": 80,
+      "start": 22,
+      "stars": [45, 75],
+      "walls": [
+        {"y": 1500, "h": 420, "x0": -170, "x1": -55},
+        {"y": 1500, "h": 420, "x0": 55, "x1": 170},
+        {"y": 3000, "h": 700, "x0": -20, "x1": 20}
+      ],
+      "gates": [
+        {"y": 300, "x": -85, "m": "x2"},
+        {"y": 300, "x": 85, "m": "+15"},
+        {"y": 1000, "x": 0, "m": "+25", "w": 110, "move": [110, 2.4]},
+        {"y": 2200, "x": -85, "m": "weapon:launcher"},
+        {"y": 2200, "x": 85, "m": "weapon:piercer"},
+        {"y": 2600, "x": -85, "m": "fire+50%, dmg-25%", "alt": "dmg+50%, fire-25%", "period": 3},
+        {"y": 2600, "x": 85, "m": "+15"},
+        {"y": 3200, "x": -95, "m": "x2", "w": 130},
+        {"y": 3200, "x": 95, "m": "weapon:frost", "w": 130},
+        {"y": 4000, "x": -85, "m": "+15", "shoot": 3, "max": 30},
+        {"y": 4000, "x": 85, "m": "-15", "shoot": 2, "max": 15}
+      ],
+      "prizes": [
+        {"y": 3450, "x": -95, "hp": 480, "r": "mech"}
+      ],
+      "waves": [
+        {"y": 650, "t": "zombie", "n": 70, "w": 300, "d": 140},
+        {"y": 1100, "t": "thief", "n": 4, "f": "line", "w": 200},
+        {"y": 1550, "t": "armored", "n": 5, "f": "column", "x": 0, "d": 300},
+        {"y": 1600, "t": "shielded", "n": 3, "f": "column", "x": 0, "d": 250},
+        {"y": 2400, "t": "zombie", "n": 100, "w": 320, "d": 180},
+        {"y": 2700, "t": "splitter", "n": 16, "w": 300, "d": 120},
+        {"y": 3200, "t": "runner", "n": 30, "f": "scatter", "x": 95, "w": 130, "d": 300},
+        {"y": 3250, "t": "zombie", "n": 50, "x": -95, "w": 120, "d": 200},
+        {"y": 3300, "t": "brute", "n": 2, "f": "line", "x": -95, "w": 60},
+        {"y": 3900, "t": "thief", "n": 6, "f": "line", "w": 280},
+        {"y": 4100, "t": "zombie", "n": 160, "w": 320, "d": 220},
+        {"y": 4350, "t": "armored", "n": 16, "f": "line", "w": 320}
+      ]
+    },
+    {
+      "id": "5-8",
+      "name": "Gate Eater",
+      "length": 1600,
+      "scroll": 78,
+      "start": 22,
+      "stars": [15, 30],
+      "hint": "It feeds on gates. Take the good ones before it inhales them, and stop its thieves.",
+      "gates": [
+        {"y": 300, "x": -85, "m": "x2"},
+        {"y": 300, "x": 85, "m": "+15"},
+        {"y": 900, "x": -85, "m": "+15", "alt": "-10", "period": 2.8},
+        {"y": 900, "x": 85, "m": "dmg+40%"},
+        {"y": 1300, "x": -85, "m": "+12"},
+        {"y": 1300, "x": 85, "m": "fire+30%"}
+      ],
+      "prizes": [
+        {"y": 1150, "x": 0, "hp": 360, "r": "mech"}
+      ],
+      "waves": [
+        {"y": 600, "t": "thief", "n": 4, "f": "line", "w": 200},
+        {"y": 700, "t": "zombie", "n": 40, "w": 280, "d": 100},
+        {"y": 1200, "t": "zombie", "n": 40, "w": 280, "d": 100}
+      ],
+      "boss": {"kind": "gateEater", "hp": 3000}
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "id": 1,
+  "name": "Outskirts",
+  "intro": "The horde is coming. Grow your squad, pick your gates, and decide what the ice is worth.",
+  "levels": [
+    {
+      "id": "1-1",
+      "name": "Rush Hour",
+      "length": 2300,
+      "scroll": 70,
+      "start": 6,
+      "stars": [14, 24],
+      "hint": "Drag left and right. Your squad fires on its own. Run through blue gates.",
+      "gates": [
+        {"y": 280, "x": -85, "m": "+4"},
+        {"y": 280, "x": 85, "m": "+8"},
+        {"y": 1250, "x": -85, "m": "x2"},
+        {"y": 1250, "x": 85, "m": "-3"}
+      ],
+      "waves": [
+        {"y": 650, "t": "zombie", "n": 6, "x": 0, "w": 100, "d": 30},
+        {"y": 1000, "t": "zombie", "n": 12, "x": -60, "w": 120, "d": 40},
+        {"y": 1550, "t": "zombie", "n": 18, "w": 220, "d": 60},
+        {"y": 1950, "t": "zombie", "n": 34, "w": 240, "d": 90}
+      ]
+    },
+    {
+      "id": "1-2",
+      "name": "Shoot It Up",
+      "length": 2500,
+      "scroll": 70,
+      "start": 10,
+      "stars": [20, 34],
+      "hint": "Shoot a gate to raise its number. Red gates can turn blue if you put in the bullets.",
+      "gates": [
+        {"y": 480, "x": -85, "m": "-6", "shoot": 3, "max": 14},
+        {"y": 480, "x": 85, "m": "+3"},
+        {"y": 1150, "x": -85, "m": "+3", "shoot": 2, "max": 20},
+        {"y": 1150, "x": 85, "m": "x2"},
+        {"y": 1950, "x": -85, "m": "-10", "shoot": 2, "max": 20},
+        {"y": 1950, "x": 85, "m": "+5"}
+      ],
+      "waves": [
+        {"y": 750, "t": "zombie", "n": 10, "w": 160, "d": 40},
+        {"y": 1350, "t": "zombie", "n": 16, "w": 200, "d": 60},
+        {"y": 1700, "t": "zombie", "n": 20, "w": 280, "d": 80},
+        {"y": 2200, "t": "zombie", "n": 26, "w": 280, "d": 90}
+      ]
+    },
+    {
+      "id": "1-3",
+      "name": "Greed Lane",
+      "length": 2800,
+      "scroll": 70,
+      "start": 10,
+      "stars": [25, 40],
+      "hint": "The best gate is often where the horde is thickest.",
+      "gates": [
+        {"y": 420, "x": -85, "m": "x2"},
+        {"y": 420, "x": 85, "m": "+5"},
+        {"y": 1150, "x": -113, "m": "+15", "w": 100},
+        {"y": 1150, "x": 0, "m": "+3", "w": 100},
+        {"y": 1150, "x": 113, "m": "+6", "w": 100},
+        {"y": 1800, "x": -85, "m": "-5", "shoot": 2, "max": 12},
+        {"y": 1800, "x": 85, "m": "+8"}
+      ],
+      "waves": [
+        {"y": 520, "t": "zombie", "n": 22, "x": -85, "w": 110, "d": 90},
+        {"y": 1200, "t": "zombie", "n": 34, "x": -113, "w": 90, "d": 140},
+        {"y": 1260, "t": "zombie", "n": 8, "x": 113, "w": 60, "d": 30},
+        {"y": 1850, "t": "zombie", "n": 40, "x": -85, "w": 130, "d": 120},
+        {"y": 2250, "t": "zombie", "n": 130, "w": 300, "d": 200},
+        {"y": 2600, "t": "zombie", "n": 80, "w": 220, "d": 120}
+      ]
+    },
+    {
+      "id": "1-4",
+      "name": "Runners",
+      "length": 3000,
+      "scroll": 70,
+      "start": 12,
+      "stars": [25, 45],
+      "hint": "Runners stick to one lane and hit fast. Shoot them down or get out of the way.",
+      "gates": [
+        {"y": 300, "x": -85, "m": "x2"},
+        {"y": 300, "x": 85, "m": "+8"},
+        {"y": 1350, "x": -85, "m": "+10", "shoot": 3, "max": 24},
+        {"y": 1350, "x": 85, "m": "-4", "shoot": 2, "max": 10},
+        {"y": 2250, "x": -85, "m": "+12"},
+        {"y": 2250, "x": 85, "m": "+6", "shoot": 2, "max": 20}
+      ],
+      "waves": [
+        {"y": 700, "t": "runner", "n": 8, "f": "column", "x": -113, "d": 150},
+        {"y": 950, "t": "runner", "n": 8, "f": "column", "x": 113, "d": 150},
+        {"y": 1150, "t": "zombie", "n": 26, "w": 200, "d": 70},
+        {"y": 1550, "t": "runner", "n": 12, "f": "column", "x": 0, "d": 200},
+        {"y": 1850, "t": "zombie", "n": 40, "w": 280, "d": 110},
+        {"y": 2050, "t": "runner", "n": 12, "f": "column", "x": -113, "d": 180},
+        {"y": 2050, "t": "runner", "n": 12, "f": "column", "x": 113, "d": 180},
+        {"y": 2480, "t": "zombie", "n": 80, "w": 320, "d": 170},
+        {"y": 2700, "t": "runner", "n": 14, "f": "column", "x": 0, "d": 150},
+        {"y": 2750, "t": "runner", "n": 10, "f": "column", "x": -113, "d": 120}
+      ]
+    },
+    {
+      "id": "1-5",
+      "name": "Cold Storage",
+      "length": 3000,
+      "scroll": 70,
+      "start": 12,
+      "stars": [25, 40],
+      "hint": "Frozen prizes break open after enough hits. Every bullet in the ice is one not hitting zombies.",
+      "gates": [
+        {"y": 300, "x": -85, "m": "+8"},
+        {"y": 300, "x": 85, "m": "x2"},
+        {"y": 1550, "x": -85, "m": "+10"},
+        {"y": 1550, "x": 85, "m": "-5", "shoot": 2, "max": 14}
+      ],
+      "prizes": [
+        {"y": 1150, "x": 100, "hp": 220, "r": "mech"}
+      ],
+      "waves": [
+        {"y": 700, "t": "zombie", "n": 16, "x": -60, "w": 160, "d": 50},
+        {"y": 1000, "t": "zombie", "n": 30, "x": -40, "w": 200, "d": 100},
+        {"y": 1850, "t": "zombie", "n": 40, "w": 300, "d": 110},
+        {"y": 2050, "t": "runner", "n": 10, "f": "column", "x": -113, "d": 160},
+        {"y": 2350, "t": "zombie", "n": 100, "w": 300, "d": 180},
+        {"y": 2750, "t": "zombie", "n": 90, "w": 300, "d": 140}
+      ]
+    },
+    {
+      "id": "1-6",
+      "name": "Bottleneck",
+      "length": 3100,
+      "scroll": 70,
+      "start": 12,
+      "stars": [25, 45],
+      "walls": [
+        {"y": 950, "h": 320, "x0": -170, "x1": -50},
+        {"y": 950, "h": 320, "x0": 60, "x1": 170},
+        {"y": 1750, "h": 420, "x0": -30, "x1": 30}
+      ],
+      "gates": [
+        {"y": 600, "x": -85, "m": "x2"},
+        {"y": 600, "x": 85, "m": "+10"},
+        {"y": 1850, "x": -105, "m": "+12", "w": 110},
+        {"y": 1850, "x": 105, "m": "-8", "w": 110, "shoot": 2, "max": 16}
+      ],
+      "waves": [
+        {"y": 400, "t": "zombie", "n": 14, "w": 200, "d": 50},
+        {"y": 1050, "t": "zombie", "n": 22, "x": 5, "w": 90, "d": 180},
+        {"y": 1900, "t": "zombie", "n": 30, "x": 105, "w": 80, "d": 100},
+        {"y": 2000, "t": "runner", "n": 12, "f": "column", "x": -105, "d": 200},
+        {"y": 2450, "t": "zombie", "n": 50, "w": 300, "d": 170},
+        {"y": 2850, "t": "runner", "n": 12, "f": "column", "x": 0, "d": 150},
+        {"y": 2900, "t": "zombie", "n": 30, "w": 300, "d": 60}
+      ]
+    },
+    {
+      "id": "1-7",
+      "name": "Fork in the Road",
+      "length": 3500,
+      "scroll": 70,
+      "start": 14,
+      "stars": [30, 55],
+      "hint": "The road splits. One side has the prize. The other side is safer.",
+      "walls": [
+        {"y": 700, "h": 1200, "x0": -18, "x1": 18}
+      ],
+      "gates": [
+        {"y": 400, "x": -85, "m": "+10"},
+        {"y": 400, "x": 85, "m": "x2"},
+        {"y": 950, "x": 95, "m": "+10", "w": 120},
+        {"y": 1450, "x": 95, "m": "+8", "w": 120},
+        {"y": 2150, "x": -85, "m": "+15", "shoot": 3, "max": 30},
+        {"y": 2150, "x": 85, "m": "-10", "shoot": 2, "max": 10}
+      ],
+      "prizes": [
+        {"y": 1350, "x": -95, "hp": 320, "r": "mech"}
+      ],
+      "waves": [
+        {"y": 1050, "t": "zombie", "n": 34, "x": -95, "w": 120, "d": 160},
+        {"y": 1150, "t": "zombie", "n": 18, "x": 95, "w": 110, "d": 90},
+        {"y": 1550, "t": "runner", "n": 12, "f": "column", "x": -95, "d": 200},
+        {"y": 1650, "t": "zombie", "n": 20, "x": 95, "w": 110, "d": 60},
+        {"y": 2350, "t": "zombie", "n": 90, "w": 320, "d": 180},
+        {"y": 2650, "t": "runner", "n": 12, "f": "column", "x": -113, "d": 160},
+        {"y": 2650, "t": "runner", "n": 12, "f": "column", "x": 113, "d": 160},
+        {"y": 3000, "t": "zombie", "n": 150, "w": 330, "d": 220}
+      ]
+    },
+    {
+      "id": "1-8",
+      "name": "Brute King",
+      "length": 1500,
+      "scroll": 70,
+      "start": 15,
+      "stars": [15, 30],
+      "hint": "He charges down the lane you stand in. Watch for the red stripe and move.",
+      "gates": [
+        {"y": 300, "x": -85, "m": "x2"},
+        {"y": 300, "x": 85, "m": "+10"},
+        {"y": 950, "x": -85, "m": "+10", "shoot": 3, "max": 24},
+        {"y": 950, "x": 85, "m": "+6"}
+      ],
+      "prizes": [
+        {"y": 1250, "x": 0, "hp": 250, "r": "mech"}
+      ],
+      "waves": [
+        {"y": 700, "t": "zombie", "n": 20, "w": 200, "d": 60},
+        {"y": 1100, "t": "zombie", "n": 24, "w": 240, "d": 60}
+      ],
+      "boss": {"kind": "bruteKing", "hp": 1300}
+    }
+  ]
+}

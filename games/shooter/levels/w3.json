@@ -1,0 +1,223 @@
+{
+  "id": 3,
+  "name": "The Mire",
+  "intro": "Packed crowds are begging for explosives. Some of them burst. Gates start to move.",
+  "levels": [
+    {
+      "id": "3-1",
+      "name": "Big Bang",
+      "length": 2900,
+      "scroll": 72,
+      "start": 16,
+      "stars": [30, 55],
+      "hint": "The Launcher blows up packed crowds. There is one in the ice.",
+      "gates": [
+        {"y": 300, "x": -85, "m": "+10"},
+        {"y": 300, "x": 85, "m": "x2"},
+        {"y": 1700, "x": -85, "m": "+15"},
+        {"y": 1700, "x": 85, "m": "fire+40%, dmg-20%"}
+      ],
+      "prizes": [
+        {"y": 650, "x": 0, "hp": 140, "r": "weapon:launcher"}
+      ],
+      "waves": [
+        {"y": 500, "t": "zombie", "n": 23, "w": 200, "d": 50},
+        {"y": 1000, "t": "zombie", "n": 78, "x": 0, "w": 160, "d": 120},
+        {"y": 1400, "t": "zombie", "n": 78, "x": -60, "w": 180, "d": 120},
+        {"y": 2000, "t": "zombie", "n": 117, "w": 240, "d": 150},
+        {"y": 2500, "t": "zombie", "n": 143, "w": 300, "d": 170}
+      ]
+    },
+    {
+      "id": "3-2",
+      "name": "Pop Goes",
+      "length": 3000,
+      "scroll": 72,
+      "start": 16,
+      "stars": [30, 55],
+      "hint": "Splitters burst into three fast ones. Blow up a pack of them and you get a swarm.",
+      "gates": [
+        {"y": 300, "x": -85, "m": "x2"},
+        {"y": 300, "x": 85, "m": "+12"},
+        {"y": 1300, "x": -85, "m": "+12", "shoot": 3, "max": 24},
+        {"y": 1300, "x": 85, "m": "dmg+40%, fire-20%"},
+        {"y": 2200, "x": -85, "m": "+15"},
+        {"y": 2200, "x": 85, "m": "x2, fire-30%"}
+      ],
+      "waves": [
+        {"y": 700, "t": "splitter", "n": 8, "w": 200, "d": 40},
+        {"y": 1000, "t": "zombie", "n": 64, "w": 260, "d": 100},
+        {"y": 1600, "t": "splitter", "n": 20, "w": 160, "d": 80},
+        {"y": 1900, "t": "zombie", "n": 80, "w": 300, "d": 120},
+        {"y": 2500, "t": "splitter", "n": 28, "w": 280, "d": 120},
+        {"y": 2700, "t": "zombie", "n": 96, "w": 300, "d": 120}
+      ]
+    },
+    {
+      "id": "3-3",
+      "name": "Sliding Doors",
+      "length": 3100,
+      "scroll": 72,
+      "start": 16,
+      "stars": [30, 55],
+      "hint": "Some gates slide. Time your run through them.",
+      "gates": [
+        {"y": 350, "x": 0, "m": "x2", "w": 110, "move": [110, 3]},
+        {"y": 1100, "x": -85, "m": "+15", "move": [50, 2.2]},
+        {"y": 1100, "x": 85, "m": "-10", "move": [50, 2.2]},
+        {"y": 1850, "x": 0, "m": "+20", "w": 100, "move": [120, 2.6]},
+        {"y": 2500, "x": -85, "m": "+15", "move": [60, 1.8]},
+        {"y": 2500, "x": 85, "m": "+8"}
+      ],
+      "waves": [
+        {"y": 700, "t": "zombie", "n": 64, "w": 260, "d": 100},
+        {"y": 1350, "t": "splitter", "n": 14, "w": 220, "d": 60},
+        {"y": 1600, "t": "zombie", "n": 80, "w": 300, "d": 120},
+        {"y": 2150, "t": "splitter", "n": 20, "w": 280, "d": 80},
+        {"y": 2300, "t": "runner", "n": 12, "f": "column", "x": 0, "d": 200},
+        {"y": 2750, "t": "zombie", "n": 160, "w": 320, "d": 180}
+      ]
+    },
+    {
+      "id": "3-4",
+      "name": "Swamp Gas",
+      "length": 3300,
+      "scroll": 72,
+      "start": 18,
+      "stars": [35, 60],
+      "gates": [
+        {"y": 300, "x": -85, "m": "x2"},
+        {"y": 300, "x": 85, "m": "pierce+1"},
+        {"y": 1100, "x": 0, "m": "+15", "w": 120, "move": [100, 2.8]},
+        {"y": 1900, "x": -85, "m": "dmg+50%, fire-25%"},
+        {"y": 1900, "x": 85, "m": "+15", "move": [40, 2]},
+        {"y": 2600, "x": -85, "m": "+12", "shoot": 3, "max": 30},
+        {"y": 2600, "x": 85, "m": "-10", "shoot": 2, "max": 12}
+      ],
+      "waves": [
+        {"y": 700, "t": "armored", "n": 10, "f": "line", "w": 280},
+        {"y": 760, "t": "splitter", "n": 11, "w": 240, "d": 60},
+        {"y": 1400, "t": "zombie", "n": 112, "w": 300, "d": 150},
+        {"y": 1700, "t": "splitter", "n": 17, "x": -80, "w": 140, "d": 80},
+        {"y": 2200, "t": "armored", "n": 12, "f": "line", "w": 320},
+        {"y": 2260, "t": "zombie", "n": 80, "w": 300, "d": 120},
+        {"y": 2900, "t": "splitter", "n": 28, "w": 300, "d": 140},
+        {"y": 3050, "t": "zombie", "n": 96, "w": 300, "d": 120}
+      ]
+    },
+    {
+      "id": "3-5",
+      "name": "Hatchery",
+      "length": 3400,
+      "scroll": 72,
+      "start": 18,
+      "stars": [35, 60],
+      "hint": "The mech sits behind a nest of splitters. Shoot the nest and the ice gets a swarm in front of it.",
+      "gates": [
+        {"y": 300, "x": -85, "m": "+15"},
+        {"y": 300, "x": 85, "m": "x2"},
+        {"y": 1900, "x": -85, "m": "+12", "move": [60, 2.4]},
+        {"y": 1900, "x": 85, "m": "x2", "move": [60, 2.4]}
+      ],
+      "prizes": [
+        {"y": 1450, "x": 0, "hp": 420, "r": "mech"}
+      ],
+      "waves": [
+        {"y": 800, "t": "zombie", "n": 64, "w": 260, "d": 100},
+        {"y": 1150, "t": "splitter", "n": 22, "x": 0, "w": 120, "d": 100},
+        {"y": 1250, "t": "zombie", "n": 32, "x": -115, "w": 80, "d": 80},
+        {"y": 1250, "t": "zombie", "n": 32, "x": 115, "w": 80, "d": 80},
+        {"y": 2300, "t": "zombie", "n": 160, "w": 320, "d": 180},
+        {"y": 2800, "t": "splitter", "n": 28, "w": 300, "d": 120},
+        {"y": 3000, "t": "zombie", "n": 128, "w": 320, "d": 150}
+      ]
+    },
+    {
+      "id": "3-6",
+      "name": "Two Paths",
+      "length": 3500,
+      "scroll": 74,
+      "start": 18,
+      "stars": [35, 60],
+      "hint": "Left is packed with splitters. Right is armor and zombies. Pick a weapon for one of them.",
+      "walls": [
+        {"y": 800, "h": 1300, "x0": -18, "x1": 18}
+      ],
+      "gates": [
+        {"y": 400, "x": -85, "m": "+12"},
+        {"y": 400, "x": 85, "m": "x2"},
+        {"y": 1100, "x": -95, "m": "+20", "w": 120, "move": [25, 2]},
+        {"y": 1100, "x": 95, "m": "+15", "w": 120},
+        {"y": 2500, "x": -85, "m": "+15", "shoot": 3, "max": 30},
+        {"y": 2500, "x": 85, "m": "dmg+40%"}
+      ],
+      "waves": [
+        {"y": 1300, "t": "splitter", "n": 22, "x": -95, "w": 120, "d": 160},
+        {"y": 1700, "t": "splitter", "n": 17, "x": -95, "w": 120, "d": 100},
+        {"y": 1300, "t": "armored", "n": 10, "f": "column", "x": 95, "d": 300},
+        {"y": 1500, "t": "zombie", "n": 64, "x": 95, "w": 120, "d": 150},
+        {"y": 2700, "t": "zombie", "n": 144, "w": 320, "d": 170},
+        {"y": 3100, "t": "splitter", "n": 22, "w": 300, "d": 100},
+        {"y": 3150, "t": "armored", "n": 12, "f": "line", "w": 320}
+      ]
+    },
+    {
+      "id": "3-7",
+      "name": "Bog March",
+      "length": 4300,
+      "scroll": 74,
+      "start": 18,
+      "stars": [40, 70],
+      "walls": [
+        {"y": 1400, "h": 450, "x0": -170, "x1": -55},
+        {"y": 1400, "h": 450, "x0": 55, "x1": 170}
+      ],
+      "gates": [
+        {"y": 300, "x": -85, "m": "x2"},
+        {"y": 300, "x": 85, "m": "+12"},
+        {"y": 900, "x": 0, "m": "+20", "w": 100, "move": [120, 2.4]},
+        {"y": 2200, "x": -85, "m": "fire+50%, dmg-25%"},
+        {"y": 2200, "x": 85, "m": "dmg+50%, fire-25%"},
+        {"y": 3000, "x": -85, "m": "+15", "move": [50, 2]},
+        {"y": 3000, "x": 85, "m": "x2", "move": [50, 2]}
+      ],
+      "prizes": [
+        {"y": 2700, "x": -100, "hp": 380, "r": "mech"}
+      ],
+      "waves": [
+        {"y": 650, "t": "zombie", "n": 64, "w": 280, "d": 120},
+        {"y": 1450, "t": "splitter", "n": 12, "x": 0, "w": 90, "d": 200},
+        {"y": 1550, "t": "zombie", "n": 38, "x": 0, "w": 90, "d": 150},
+        {"y": 2000, "t": "armored", "n": 12, "f": "line", "w": 320},
+        {"y": 2400, "t": "zombie", "n": 77, "x": 60, "w": 200, "d": 150},
+        {"y": 2600, "t": "runner", "n": 14, "f": "column", "x": -113, "d": 220},
+        {"y": 3300, "t": "splitter", "n": 26, "w": 300, "d": 150},
+        {"y": 3500, "t": "zombie", "n": 154, "w": 320, "d": 200},
+        {"y": 3900, "t": "armored", "n": 14, "f": "line", "w": 320}
+      ]
+    },
+    {
+      "id": "3-8",
+      "name": "Brood Mother",
+      "length": 1500,
+      "scroll": 72,
+      "start": 18,
+      "stars": [15, 30],
+      "hint": "She lobs eggs that hatch splitters. Shoot them down in the air, or deal with what hatches.",
+      "gates": [
+        {"y": 300, "x": -85, "m": "x2"},
+        {"y": 300, "x": 85, "m": "+15"},
+        {"y": 900, "x": -85, "m": "+12", "move": [50, 2]},
+        {"y": 900, "x": 85, "m": "fire+40%, dmg-20%"}
+      ],
+      "prizes": [
+        {"y": 1250, "x": 0, "hp": 320, "r": "mech"}
+      ],
+      "waves": [
+        {"y": 600, "t": "splitter", "n": 8, "w": 240, "d": 60},
+        {"y": 1100, "t": "zombie", "n": 40, "w": 280, "d": 100}
+      ],
+      "boss": {"kind": "broodMother", "hp": 1600}
+    }
+  ]
+}
