@@ -1,0 +1,19 @@
+{
+  "name": "mobile-game-library",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite games/shooter --host",
+    "build": "tsc --noEmit && vite build games/shooter && node scripts/site-index.mjs",
+    "preview": "vite preview --outDir dist",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "5.6.3",
+    "vite": "5.4.11",
+    "vitest": "2.1.8"
+  }
+}
